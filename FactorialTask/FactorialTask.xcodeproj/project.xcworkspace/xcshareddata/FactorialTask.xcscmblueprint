@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7989D8DE8F179699929827D59E60F28C3F98A48E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7989D8DE8F179699929827D59E60F28C3F98A48E" : 0,
+    "7B3173A9A8711E26B2B7E8EB32A82862FE9BF726" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8373482A-A175-4F7A-BB9D-999E19A6EA75",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7989D8DE8F179699929827D59E60F28C3F98A48E" : "MTFactorialTask-swift\/",
+    "7B3173A9A8711E26B2B7E8EB32A82862FE9BF726" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FactorialTask",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FactorialTask\/FactorialTask.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/maxxx777\/MTFactorialTask-swift",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7989D8DE8F179699929827D59E60F28C3F98A48E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/alexthec0d3r\/scheduleapp-iphone-cloned.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B3173A9A8711E26B2B7E8EB32A82862FE9BF726"
+    }
+  ]
+}

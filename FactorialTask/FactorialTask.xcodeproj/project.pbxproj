@@ -14,6 +14,7 @@
 		75CBB40F1BD6843C00F2ABA7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB4031BD6843C00F2ABA7 /* MasterViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		75CBB4101BD6843C00F2ABA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CBB4081BD6843C00F2ABA7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		75CBB4111BD6843C00F2ABA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CBB40A1BD6843C00F2ABA7 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		75CBB4131BD686CE00F2ABA7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB4121BD686CE00F2ABA7 /* TextField.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		75CBB4031BD6843C00F2ABA7 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		75CBB4091BD6843C00F2ABA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75CBB40B1BD6843C00F2ABA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75CBB4121BD686CE00F2ABA7 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		75CBB4061BD6843C00F2ABA7 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				75CBB4121BD686CE00F2ABA7 /* TextField.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CBB4131BD686CE00F2ABA7 /* TextField.swift in Sources */,
 				75CBB40F1BD6843C00F2ABA7 /* MasterViewController.swift in Sources */,
 				75CBB40C1BD6843C00F2ABA7 /* AppDelegate.swift in Sources */,
 			);

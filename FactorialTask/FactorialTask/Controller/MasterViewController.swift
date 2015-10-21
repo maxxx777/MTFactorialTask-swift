@@ -8,18 +8,24 @@
 
 import UIKit
 
-class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var tableView: UITableView?
-    @IBOutlet weak var textFieldNumber: UITextField?
-    @IBOutlet weak var buttonCalculate: UIButton?
+class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FactorialCalculatorOutputInterface {
+
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var textFieldNumber: UITextField!
+    @IBOutlet weak var buttonCalculate: UIButton!
     
-    var objects = [AnyObject]()
+    var factorialCalculator : FactorialCalculator!
+    var objects : [String]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        objects = []
+        
+        factorialCalculator = FactorialCalculator()
+        factorialCalculator.output = self
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -30,6 +36,65 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - IB Actions
+    
+    @IBAction func calculateButtonPressed(sender: UIButton) {
+
+        if (textFieldNumber.text?.characters.count == 0) {
+            textFieldNumber?.text = "0"
+        }
+        
+        textFieldNumber.resignFirstResponder()
+        clearTableData()
+        
+        //convert string to unsigned value
+        let ulvalue = strtoul(textFieldNumber.text!, nil, 0) as UInt
+        
+        //convert unsigned value to string
+        textFieldNumber?.text = String(format: "%lu", ulvalue)
+        
+        factorialCalculator .calculateFactorialRecordsWithLimit(ulvalue as NSNumber)
+    }
+    
+    @IBAction func ulongButtonPressed(sender: UIButton) {
+        
+        textFieldNumber?.text = String(format: "%lu", UInt.max)
+        
+    }
+    
+    // MARK: - UI
+    
+    func showRecordInLog(record: String) {
+        NSLog("%@", record)
+    }
+    
+    func showRecordInTableView(record: String) {
+    
+        if objects == nil {
+            objects = []
+        }
+        
+        objects?.insert(record, atIndex: (objects?.count)!)
+        
+        let indexPath = NSIndexPath(forRow: tableView.numberOfRowsInSection(0), inSection: 0)
+        tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+    
+    func clearTableData() {
+        
+        objects?.removeAll()
+        tableView.reloadData()
+        
+    }
+    
+    // MARK: - FactorialCalculatorOutputInterface
+    
+    func onDidCalculateFactorialRecord(record: String) {
+        
+        showRecordInTableView(record)
+        
+    }
 
     // MARK: - Table View
 
@@ -38,31 +103,15 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return objects!.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        let object = objects![indexPath.row] as String
+        cell.textLabel!.text = object
         return cell
     }
-
-    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            objects.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-        }
-    }
-
-
+    
 }
-

@@ -10,11 +10,12 @@
 		75CBB3F41BD683B900F2ABA7 /* FactorialTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB3F31BD683B900F2ABA7 /* FactorialTaskTests.swift */; };
 		75CBB40C1BD6843C00F2ABA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB3FF1BD6843C00F2ABA7 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		75CBB40D1BD6843C00F2ABA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CBB4001BD6843C00F2ABA7 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		75CBB40E1BD6843C00F2ABA7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75CBB4011BD6843C00F2ABA7 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		75CBB40F1BD6843C00F2ABA7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB4031BD6843C00F2ABA7 /* MasterViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		75CBB4101BD6843C00F2ABA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CBB4081BD6843C00F2ABA7 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		75CBB4111BD6843C00F2ABA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CBB40A1BD6843C00F2ABA7 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		75CBB4131BD686CE00F2ABA7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB4121BD686CE00F2ABA7 /* TextField.swift */; settings = {ASSET_TAGS = (); }; };
+		75CBB4151BD68EC400F2ABA7 /* FactorialCalculatorIOInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB4141BD68EC400F2ABA7 /* FactorialCalculatorIOInterface.swift */; settings = {ASSET_TAGS = (); }; };
+		75CBB4171BD68FA900F2ABA7 /* FactorialCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBB4161BD68FA900F2ABA7 /* FactorialCalculator.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		75CBB4091BD6843C00F2ABA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75CBB40B1BD6843C00F2ABA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75CBB4121BD686CE00F2ABA7 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		75CBB4141BD68EC400F2ABA7 /* FactorialCalculatorIOInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactorialCalculatorIOInterface.swift; sourceTree = "<group>"; };
+		75CBB4161BD68FA900F2ABA7 /* FactorialCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactorialCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 		75CBB4041BD6843C00F2ABA7 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				75CBB4161BD68FA900F2ABA7 /* FactorialCalculator.swift */,
+				75CBB4141BD68EC400F2ABA7 /* FactorialCalculatorIOInterface.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -229,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CBB4101BD6843C00F2ABA7 /* LaunchScreen.storyboard in Resources */,
-				75CBB40E1BD6843C00F2ABA7 /* Info.plist in Resources */,
 				75CBB40D1BD6843C00F2ABA7 /* Assets.xcassets in Resources */,
 				75CBB4111BD6843C00F2ABA7 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +256,8 @@
 				75CBB4131BD686CE00F2ABA7 /* TextField.swift in Sources */,
 				75CBB40F1BD6843C00F2ABA7 /* MasterViewController.swift in Sources */,
 				75CBB40C1BD6843C00F2ABA7 /* AppDelegate.swift in Sources */,
+				75CBB4171BD68FA900F2ABA7 /* FactorialCalculator.swift in Sources */,
+				75CBB4151BD68EC400F2ABA7 /* FactorialCalculatorIOInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +447,7 @@
 				75CBB3FA1BD683B900F2ABA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75CBB3FB1BD683B900F2ABA7 /* Build configuration list for PBXNativeTarget "FactorialTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +456,7 @@
 				75CBB3FD1BD683B900F2ABA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

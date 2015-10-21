@@ -83,6 +83,9 @@
                                     <constraint firstAttribute="width" constant="106" id="Fch-QO-OHD"/>
                                 </constraints>
                                 <state key="normal" title="ULONG_MAX"/>
+                                <connections>
+                                    <action selector="ulongButtonPressed:" destination="ziq-Gk-bH0" eventType="touchUpInside" id="LVT-8j-vLu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U9-YO-yj2">
                                 <rect key="frame" x="504" y="18" width="86" height="30"/>
@@ -91,6 +94,9 @@
                                     <constraint firstAttribute="width" constant="86" id="O2T-hg-T5h"/>
                                 </constraints>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="ziq-Gk-bH0" eventType="touchUpInside" id="tVD-gg-fbV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

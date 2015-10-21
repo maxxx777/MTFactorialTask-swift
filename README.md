@@ -1,3 +1,3 @@
 # MTFactorialTask-swift
 
-swift version of https://github.com/maxxx777/MTFactorialTask
+Swift version of [this repository](https://github.com/maxxx777/MTFactorialTask)
